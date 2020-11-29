@@ -1,13 +1,3 @@
-variable "org_service_url" {
-  description = "The Azure DevOps organisation URL."
-  type        = string
-}
-
-variable "personal_access_token" {
-  description = "The Azure DevOps organization personal access token."
-  type        = string
-}
-
 variable "project_name" {
   description = "The project name."
   type        = string
