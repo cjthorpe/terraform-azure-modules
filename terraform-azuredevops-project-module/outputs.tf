@@ -1,4 +1,3 @@
-
 output "azuredevops_project" {
   value = {
     project_name       = azuredevops_project.instance.project_name
