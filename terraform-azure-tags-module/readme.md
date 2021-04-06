@@ -1,1 +1,0 @@
-es-csoc-azure-infra
