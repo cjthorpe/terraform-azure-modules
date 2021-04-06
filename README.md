@@ -3,4 +3,5 @@ A collection of Terraform modules for provisioning infrastructure in Azure.
 
 | Module Name | Description | 
 |-------------|-------------|
-| azurerm-storage-module | A Terraform module to manage an Azure Storage Account and also a Container within an Azure Storage Account. | 
+| terraform-azurerm-storage-module | A Terraform module to provision an Azure Storage Account and also a Container within an Azure Storage Account. | 
+| terraform-azure-tags-module | A Terraform module to apply tags to Azure infrastructure provisioned via Terraform. |
