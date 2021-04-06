@@ -1,4 +1,3 @@
-
 variable "account_replication_type" {
   description = "Defines the type of replication to use for this storage account."
   type        = string
@@ -11,6 +10,16 @@ variable "account_tier" {
 
 variable "container_access_type" {
   description = "The Access Level configured for this Container."
+  type        = string
+}
+
+variable "environment" {
+  description = "The environment within which the infrastructure will be created. Used for tagging."
+  type        = string
+}
+
+variable "project_service" {
+  description = "The name of the service."
   type        = string
 }
 
@@ -33,4 +42,3 @@ variable "storage_container_name" {
   description = "The name of the Container which should be created within the Storage Account."
   type        = string
 }
-
