@@ -28,7 +28,7 @@ module "storage" {
   project_service          = var.project_service
   region                   = var.region
   resource_group_name      = var.resource_group_name
-  source                   = "git@github.com:cjthorpe/terraform-azure-modules//azurerm-storage-module"
+  source                   = "git@github.com:cjthorpe/terraform-azure-modules//terraform-azurerm-storage-module"
   storage_account_name     = var.storage_account_name
   storage_container_name   = var.storage_container_name
 }
@@ -89,13 +89,13 @@ variable "storage_container_name" {
 |------|-------------|:----:|:-----:|:-----:|
 | account_replication_type | Defines the type of replication to use for this storage account. | string | | Yes |
 | account_tier | Defines the tier to use for this storage account. | string | | Yes |
-| container_access_type | The access level configured for this container. | string | Yes |
+| container_access_type | The access level configured for this container. | string | | Yes |
 | environment | The environment within which the infrastructure will be created. | string | | Yes |
 | project_service | The name of the service. | string | | Yes |
-| region | The Azure region where the infrastructure is hosted. | | Yes |
-| resource_group_name | The name to use for this resource group. | | Yes |
-| storage_account_name | Specifies the name of the storage account. | | Yes |
-| storage_container_name | The name of the container which should be created within the Storage Access. | | Yes |
+| region | The Azure region where the infrastructure is hosted. | string | | Yes |
+| resource_group_name | The name to use for this resource group. | string | | Yes |
+| storage_account_name | Specifies the name of the storage account. | string | | Yes |
+| storage_container_name | The name of the container which should be created within the Storage Access. | string | | Yes |
 
 -------------
 ## References
